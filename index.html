@@ -227,4 +227,15 @@
       if (total <= 17) {
         resultText = "<strong>Profil \"Connectée\" (8 à 17 points)</strong><br>Tu es à l’aise dans le monde digital ! Les échanges en ligne te conviennent parfaitement : pratiques, rapides, flexibles. Tu préfères organiser des moments conviviaux à distance, depuis ton canapé ou entre deux rendez-vous. Le format hôtesse en virtuel est fait pour toi : tu gères tout à ton rythme et sans contrainte !";
       } else if (total <= 27) {
-        resultText = "<strong>Profil \"Hybride\" (18 à 27 points)</strong><br>Tu es à l’aise à la fois en ligne et en vrai. Tu pourrais tout à fait recevoir chez toi de temps en temps, mais tu apprécies aussi la souplesse des événements virtuels. Tu t’adaptes selo
+        resultText = "<strong>Profil \"Hybride\" (18 à 27 points)</strong><br>Tu es à l’aise à la fois en ligne et en vrai. Tu pourrais tout à fait recevoir chez toi de temps en temps, mais tu apprécies aussi la souplesse des événements virtuels. Tu t’adaptes selon ton emploi du temps, ton énergie, ou la disponibilité de ton entourage. Hôtesse en virtuel ou en présentiel ? Tu es libre de choisir selon l’occasion !";
+      } else if (total <= 34) {
+        resultText = "<strong>Profil \"Chaleureuse\" (28 à 34 points)</strong><br>Tu adores les vrais moments partagés ! Tu aimes recevoir, organiser, créer une ambiance. Même si tu n’es pas contre un petit échange en ligne de temps en temps, c’est en présentiel que tu t’épanouis vraiment. Ton entourage le ressent : les gens aiment venir chez toi. Tu es une hôtesse naturelle !";
+      } else {
+        resultText = "<strong>Profil \"Ambassadrice Conviviale\" (35 à 40 points)</strong><br>Tu es née pour accueillir ! Tu adores créer du lien, partager un moment chaleureux, faire plaisir à ton entourage. Ta maison est un lieu de vie et d’échanges. Tu es clairement faite pour être hôtesse à domicile ! Et avec toi, chaque rencontre devient un vrai petit événement. 🎉";
+      }
+
+      document.getElementById('result').innerHTML = resultText;
+    });
+  </script>
+</body>
+</html>
