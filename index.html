@@ -31,7 +31,7 @@
     }
 
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: 220px auto 50px;
       background: #fffafa;
       padding: 30px;
@@ -60,13 +60,25 @@
       color: #880000;
     }
 
-    label {
-      display: block;
-      margin: 20px 0 10px;
+    .question {
+      margin-bottom: 20px;
     }
 
-    input[type="range"] {
-      width: 100%;
+    .question label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+
+    .options label {
+      flex: 1;
+      text-align: center;
     }
 
     #submit {
@@ -105,29 +117,93 @@
     <div class="legend">Réponse 1 = le moins vrai | Réponse 5 = tout à fait</div>
 
     <form id="quizForm">
-      <label>1/ Tu prends plaisir à recevoir des gens chez toi, même juste pour un café.</label>
-      <input type="range" name="q1" min="1" max="5" required>
+      <div class="question">
+        <label>1/ Tu prends plaisir à recevoir des gens chez toi, même juste pour un café.</label>
+        <div class="options">
+          <label><input type="radio" name="q1" value="1" required>1</label>
+          <label><input type="radio" name="q1" value="2">2</label>
+          <label><input type="radio" name="q1" value="3">3</label>
+          <label><input type="radio" name="q1" value="4">4</label>
+          <label><input type="radio" name="q1" value="5">5</label>
+        </div>
+      </div>
 
-      <label>2/ Tu préfères les échanges en vrai plutôt qu'en message.</label>
-      <input type="range" name="q2" min="1" max="5" required>
+      <div class="question">
+        <label>2/ Tu préfères les échanges en vrai plutôt qu'en message.</label>
+        <div class="options">
+          <label><input type="radio" name="q2" value="1" required>1</label>
+          <label><input type="radio" name="q2" value="2">2</label>
+          <label><input type="radio" name="q2" value="3">3</label>
+          <label><input type="radio" name="q2" value="4">4</label>
+          <label><input type="radio" name="q2" value="5">5</label>
+        </div>
+      </div>
 
-      <label>3/ Tu es vite lassée des échanges sur les groupes de discussions en ligne.</label>
-      <input type="range" name="q3" min="1" max="5" required>
+      <div class="question">
+        <label>3/ Tu es vite lassée des échanges sur les groupes de discussions en ligne.</label>
+        <div class="options">
+          <label><input type="radio" name="q3" value="1" required>1</label>
+          <label><input type="radio" name="q3" value="2">2</label>
+          <label><input type="radio" name="q3" value="3">3</label>
+          <label><input type="radio" name="q3" value="4">4</label>
+          <label><input type="radio" name="q3" value="5">5</label>
+        </div>
+      </div>
 
-      <label>4/ Tes amies viennent souvent chez toi pour un goûter, un apéro…</label>
-      <input type="range" name="q4" min="1" max="5" required>
+      <div class="question">
+        <label>4/ Tes amies viennent souvent chez toi pour un goûter, un apéro…</label>
+        <div class="options">
+          <label><input type="radio" name="q4" value="1" required>1</label>
+          <label><input type="radio" name="q4" value="2">2</label>
+          <label><input type="radio" name="q4" value="3">3</label>
+          <label><input type="radio" name="q4" value="4">4</label>
+          <label><input type="radio" name="q4" value="5">5</label>
+        </div>
+      </div>
 
-      <label>5/ Tu as du temps à consacrer pour organiser un moment sympa à la maison.</label>
-      <input type="range" name="q5" min="1" max="5" required>
+      <div class="question">
+        <label>5/ Tu as du temps à consacrer pour organiser un moment sympa à la maison.</label>
+        <div class="options">
+          <label><input type="radio" name="q5" value="1" required>1</label>
+          <label><input type="radio" name="q5" value="2">2</label>
+          <label><input type="radio" name="q5" value="3">3</label>
+          <label><input type="radio" name="q5" value="4">4</label>
+          <label><input type="radio" name="q5" value="5">5</label>
+        </div>
+      </div>
 
-      <label>6/ C’est important de toucher les produits, les essayer avant d’acheter, etc.</label>
-      <input type="range" name="q6" min="1" max="5" required>
+      <div class="question">
+        <label>6/ C’est important de toucher les produits, les essayer avant d’acheter, etc.</label>
+        <div class="options">
+          <label><input type="radio" name="q6" value="1" required>1</label>
+          <label><input type="radio" name="q6" value="2">2</label>
+          <label><input type="radio" name="q6" value="3">3</label>
+          <label><input type="radio" name="q6" value="4">4</label>
+          <label><input type="radio" name="q6" value="5">5</label>
+        </div>
+      </div>
 
-      <label>7/ Je trouve les échanges en présentiel plus spontanés et agréables.</label>
-      <input type="range" name="q7" min="1" max="5" required>
+      <div class="question">
+        <label>7/ Je trouve les échanges en présentiel plus spontanés et agréables.</label>
+        <div class="options">
+          <label><input type="radio" name="q7" value="1" required>1</label>
+          <label><input type="radio" name="q7" value="2">2</label>
+          <label><input type="radio" name="q7" value="3">3</label>
+          <label><input type="radio" name="q7" value="4">4</label>
+          <label><input type="radio" name="q7" value="5">5</label>
+        </div>
+      </div>
 
-      <label>8/ Tes amies ou connaissances sont proches géographiquement, tu peux facilement les inviter chez toi.</label>
-      <input type="range" name="q8" min="1" max="5" required>
+      <div class="question">
+        <label>8/ Tes amies ou connaissances sont proches géographiquement, tu peux facilement les inviter chez toi.</label>
+        <div class="options">
+          <label><input type="radio" name="q8" value="1" required>1</label>
+          <label><input type="radio" name="q8" value="2">2</label>
+          <label><input type="radio" name="q8" value="3">3</label>
+          <label><input type="radio" name="q8" value="4">4</label>
+          <label><input type="radio" name="q8" value="5">5</label>
+        </div>
+      </div>
 
       <button type="submit" id="submit">Voir mon profil</button>
     </form>
@@ -138,25 +214,17 @@
   <script>
     document.getElementById('quizForm').addEventListener('submit', function (e) {
       e.preventDefault();
-
       let total = 0;
+
       for (let i = 1; i <= 8; i++) {
-        total += parseInt(document.querySelector(`[name=q${i}]`).value);
+        const value = document.querySelector(`input[name="q${i}"]:checked`);
+        if (value) {
+          total += parseInt(value.value);
+        }
       }
 
       let resultText = "";
       if (total <= 17) {
         resultText = "<strong>Profil \"Connectée\" (8 à 17 points)</strong><br>Tu es à l’aise dans le monde digital ! Les échanges en ligne te conviennent parfaitement : pratiques, rapides, flexibles. Tu préfères organiser des moments conviviaux à distance, depuis ton canapé ou entre deux rendez-vous. Le format hôtesse en virtuel est fait pour toi : tu gères tout à ton rythme et sans contrainte !";
       } else if (total <= 27) {
-        resultText = "<strong>Profil \"Hybride\" (18 à 27 points)</strong><br>Tu es à l’aise à la fois en ligne et en vrai. Tu pourrais tout à fait recevoir chez toi de temps en temps, mais tu apprécies aussi la souplesse des événements virtuels. Tu t’adaptes selon ton emploi du temps, ton énergie, ou la disponibilité de ton entourage. Hôtesse en virtuel ou en présentiel ? Tu es libre de choisir selon l’occasion !";
-      } else if (total <= 34) {
-        resultText = "<strong>Profil \"Chaleureuse\" (28 à 34 points)</strong><br>Tu adores les vrais moments partagés ! Tu aimes recevoir, organiser, créer une ambiance. Même si tu n’es pas contre un petit échange en ligne de temps en temps, c’est en présentiel que tu t’épanouis vraiment. Ton entourage le ressent : les gens aiment venir chez toi. Tu es une hôtesse naturelle !";
-      } else {
-        resultText = "<strong>Profil \"Ambassadrice Conviviale\" (35 à 40 points)</strong><br>Tu es née pour accueillir ! Tu adores créer du lien, partager un moment chaleureux, faire plaisir à ton entourage. Ta maison est un lieu de vie et d’échanges. Tu es clairement faite pour être hôtesse à domicile ! Et avec toi, chaque rencontre devient un vrai petit événement. 🎉";
-      }
-
-      document.getElementById('result').innerHTML = resultText;
-    });
-  </script>
-</body>
-</html>
+        resultText = "<strong>Profil \"Hybride\" (18 à 27 points)</strong><br>Tu es à l’aise à la fois en ligne et en vrai. Tu pourrais tout à fait recevoir chez toi de temps en temps, mais tu apprécies aussi la souplesse des événements virtuels. Tu t’adaptes selo
