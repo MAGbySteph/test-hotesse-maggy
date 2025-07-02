@@ -61,24 +61,27 @@
     }
 
     .question {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .question label {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-weight: bold;
     }
 
-    .options {
+    .scale-labels {
       display: flex;
       justify-content: space-between;
-      padding: 0 10px;
+      font-size: 0.85em;
+      color: #a00000;
+      margin: 0 5px 5px;
     }
 
-    .options label {
-      flex: 1;
-      text-align: center;
+    input[type=range] {
+      width: 100%;
+      margin-bottom: 10px;
+      accent-color: #a00000;
     }
 
     #submit {
@@ -117,92 +120,54 @@
     <div class="legend">Réponse 1 = le moins vrai | Réponse 5 = tout à fait</div>
 
     <form id="quizForm">
+
+      <!-- Question Template -->
       <div class="question">
         <label>1/ Tu prends plaisir à recevoir des gens chez toi, même juste pour un café.</label>
-        <div class="options">
-          <label><input type="radio" name="q1" value="1" required>1</label>
-          <label><input type="radio" name="q1" value="2">2</label>
-          <label><input type="radio" name="q1" value="3">3</label>
-          <label><input type="radio" name="q1" value="4">4</label>
-          <label><input type="radio" name="q1" value="5">5</label>
-        </div>
+        <div class="scale-labels"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <input type="range" name="q1" min="1" max="5" value="3" required>
       </div>
 
       <div class="question">
         <label>2/ Tu préfères les échanges en vrai plutôt qu'en message.</label>
-        <div class="options">
-          <label><input type="radio" name="q2" value="1" required>1</label>
-          <label><input type="radio" name="q2" value="2">2</label>
-          <label><input type="radio" name="q2" value="3">3</label>
-          <label><input type="radio" name="q2" value="4">4</label>
-          <label><input type="radio" name="q2" value="5">5</label>
-        </div>
+        <div class="scale-labels"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <input type="range" name="q2" min="1" max="5" value="3" required>
       </div>
 
       <div class="question">
         <label>3/ Tu es vite lassée des échanges sur les groupes de discussions en ligne.</label>
-        <div class="options">
-          <label><input type="radio" name="q3" value="1" required>1</label>
-          <label><input type="radio" name="q3" value="2">2</label>
-          <label><input type="radio" name="q3" value="3">3</label>
-          <label><input type="radio" name="q3" value="4">4</label>
-          <label><input type="radio" name="q3" value="5">5</label>
-        </div>
+        <div class="scale-labels"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <input type="range" name="q3" min="1" max="5" value="3" required>
       </div>
 
       <div class="question">
         <label>4/ Tes amies viennent souvent chez toi pour un goûter, un apéro…</label>
-        <div class="options">
-          <label><input type="radio" name="q4" value="1" required>1</label>
-          <label><input type="radio" name="q4" value="2">2</label>
-          <label><input type="radio" name="q4" value="3">3</label>
-          <label><input type="radio" name="q4" value="4">4</label>
-          <label><input type="radio" name="q4" value="5">5</label>
-        </div>
+        <div class="scale-labels"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <input type="range" name="q4" min="1" max="5" value="3" required>
       </div>
 
       <div class="question">
         <label>5/ Tu as du temps à consacrer pour organiser un moment sympa à la maison.</label>
-        <div class="options">
-          <label><input type="radio" name="q5" value="1" required>1</label>
-          <label><input type="radio" name="q5" value="2">2</label>
-          <label><input type="radio" name="q5" value="3">3</label>
-          <label><input type="radio" name="q5" value="4">4</label>
-          <label><input type="radio" name="q5" value="5">5</label>
-        </div>
+        <div class="scale-labels"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <input type="range" name="q5" min="1" max="5" value="3" required>
       </div>
 
       <div class="question">
         <label>6/ C’est important de toucher les produits, les essayer avant d’acheter, etc.</label>
-        <div class="options">
-          <label><input type="radio" name="q6" value="1" required>1</label>
-          <label><input type="radio" name="q6" value="2">2</label>
-          <label><input type="radio" name="q6" value="3">3</label>
-          <label><input type="radio" name="q6" value="4">4</label>
-          <label><input type="radio" name="q6" value="5">5</label>
-        </div>
+        <div class="scale-labels"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <input type="range" name="q6" min="1" max="5" value="3" required>
       </div>
 
       <div class="question">
         <label>7/ Je trouve les échanges en présentiel plus spontanés et agréables.</label>
-        <div class="options">
-          <label><input type="radio" name="q7" value="1" required>1</label>
-          <label><input type="radio" name="q7" value="2">2</label>
-          <label><input type="radio" name="q7" value="3">3</label>
-          <label><input type="radio" name="q7" value="4">4</label>
-          <label><input type="radio" name="q7" value="5">5</label>
-        </div>
+        <div class="scale-labels"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <input type="range" name="q7" min="1" max="5" value="3" required>
       </div>
 
       <div class="question">
         <label>8/ Tes amies ou connaissances sont proches géographiquement, tu peux facilement les inviter chez toi.</label>
-        <div class="options">
-          <label><input type="radio" name="q8" value="1" required>1</label>
-          <label><input type="radio" name="q8" value="2">2</label>
-          <label><input type="radio" name="q8" value="3">3</label>
-          <label><input type="radio" name="q8" value="4">4</label>
-          <label><input type="radio" name="q8" value="5">5</label>
-        </div>
+        <div class="scale-labels"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <input type="range" name="q8" min="1" max="5" value="3" required>
       </div>
 
       <button type="submit" id="submit">Voir mon profil</button>
@@ -217,10 +182,8 @@
       let total = 0;
 
       for (let i = 1; i <= 8; i++) {
-        const value = document.querySelector(`input[name="q${i}"]:checked`);
-        if (value) {
-          total += parseInt(value.value);
-        }
+        const value = document.querySelector(`input[name="q${i}"]`).value;
+        total += parseInt(value);
       }
 
       let resultText = "";
